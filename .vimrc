@@ -44,6 +44,7 @@ set title
 set number
 set ruler
 set wrap
+set visualbell
 
 " -- search
 set ignorecase
