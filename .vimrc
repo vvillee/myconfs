@@ -15,6 +15,10 @@
 " https://github.com/scrooloose/nerdtree.git <-- Nerdtree file explorer
 " https://github.com/tpope/vim-endwise <-- Add end etc. to the end of the block
 " https://github.com/ervandew/supertab.git <-- light weight code completition
+"
+" Cheat sheets:
+" https://github.com/jordanhudgens/vim-settings/blob/master/vim-cheat-sheet.md
+" http://www.viemu.com/vi-vim-cheat-sheet.gif
 
 set t_Co=256
 
