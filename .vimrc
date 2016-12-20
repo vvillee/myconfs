@@ -7,11 +7,11 @@
 " Then, add to ~/.vim/bundle
 " https://github.com/altercation/vim-colors-solarized
 " https://github.com/tpope/vim-commentary <-- commenting plugin
-" 
+"
 " and optionally:
 " https://github.com/tpope/vim-sensible <-- sensible configuration for vim
 " https://github.com/sheerun/vim-polyglot <-- vim language pack
-" https://github.com/vim-syntastic/syntastic <-- syntax checker (needs external tools like jshint) 
+" https://github.com/vim-syntastic/syntastic <-- syntax checker (needs external tools like jshint)
 "
 " language packs for vim-polyglot and vim-commentary as needed...
 "
@@ -21,7 +21,7 @@ set t_Co=256
 set nocompatible " no compatibility with vi
 
 " Activate pathoghen
-execute pathogen#infect() 
+execute pathogen#infect()
 
 syntax on " enable syntax highlighting
 
@@ -65,7 +65,7 @@ imap <right> <nop>
 " set leader
 let mapleader=";"
 
-" vim-commentary: comment with leader + / 
+" vim-commentary: comment with leader + /
 noremap <Leader>/ :Commentary<cr>
 
 " vim-syntastic: suggested defaults
@@ -77,3 +77,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" remove trailing whitespaces on save
+autocmd BufWritePre * %s/\s\+$//e
