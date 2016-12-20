@@ -10,11 +10,11 @@
 "
 " and optionally:
 " https://github.com/tpope/vim-sensible <-- sensible configuration for vim
-" https://github.com/sheerun/vim-polyglot <-- vim language pack
 " https://github.com/vim-syntastic/syntastic <-- syntax checker (needs external tools like jshint)
-"
-" language packs for vim-polyglot and vim-commentary as needed...
-"
+" https://github.com/ctrlpvim/ctrlp.vim <-- Fuzzy search with ctrl + p
+" https://github.com/scrooloose/nerdtree.git <-- Nerdtree file explorer
+" https://github.com/tpope/vim-endwise <-- Add end etc. to the end of the block
+" https://github.com/ervandew/supertab.git <-- light weight code completition
 
 set t_Co=256
 
@@ -25,18 +25,11 @@ execute pathogen#infect()
 
 syntax on " enable syntax highlighting
 
-filetype plugin indent on " enable file spesific behavior like syntax highlighting and indentation
-set tabstop=2 " tab intend with 2 spaces
-set shiftwidth=2 " when indenting with '>', use 2 spaces
-set expandtab " when pressing tab, insert spaces
-
 set background=dark
 
 " Set solarized confs
 let g:solarized_termcolors=256
 colorscheme solarized
-
-set guioptions=T " enable the toolbar
 
 set scrolloff=3 " display atleast 3 lines around your cursor
 
@@ -52,6 +45,20 @@ set smartcase
 
 set incsearch
 set hlsearch
+
+" -- Indentation
+set autoindent
+set smartindent
+set smarttab " convert tabs to spaces
+set tabstop=2 " tab intend with 2 spaces
+set shiftwidth=2 " when indenting with '>', use 2 spaces
+set softtabstop=2
+set expandtab " when pressing tab, insert spaces
+
+filetype plugin indent on " enable file spesific behavior like syntax highlighting and indentation
+
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
 
 " -- disable directional keys
 map <up> <nop>
@@ -81,3 +88,14 @@ let g:syntastic_check_on_wq = 0
 
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
+
+" Window pane resizing
+nnoremap <silent> <Leader>> :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>< :exe "resize " . (winheight(0) * 2/3)<CR>
+
+" -- Nerdtree (https://github.com/scrooloose/nerdtree.git)
+" open nerdtree automatically upon a startup if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Ctrl + n to open nerdtree
+map <C-n> :NERDTreeToggle<CR>
