@@ -90,6 +90,9 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_ruby_checkers = ['rubocop']
+
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
