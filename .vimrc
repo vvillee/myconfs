@@ -80,6 +80,10 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" mappings for adding a newline before/after without switching to insert mode
+nmap <C-o> O<Esc>j
+nmap <CR> o<Esc>k
+
 " set leader
 let mapleader=";"
 
