@@ -25,7 +25,13 @@ set t_Co=256
 set nocompatible " no compatibility with vi
 
 " Activate pathoghen
-execute pathogen#infect()
+" execute pathogen#infect()
+
+" Use vundle instead of pathogen
+" 1) $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" 2) $ vim +PluginInstall +qall
+" alternative 2) :PluginInstall command in vim
+source ~/myconfs/.vundle
 
 syntax on " enable syntax highlighting
 
