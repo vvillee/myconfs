@@ -113,5 +113,6 @@ nnoremap <silent> <Leader>< :exe "resize " . (winheight(0) * 2/3)<CR>
 " open nerdtree automatically upon a startup if no files were specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeShowHidden=1
 " Ctrl + n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
