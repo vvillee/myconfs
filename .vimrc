@@ -1,20 +1,4 @@
 " VIM configuration  - Ville Pulkkinen
-" Some defaults I use, adapted from https://github.com/vjousse/vim-for-humans-book
-"
-" First, install:
-" https://github.com/tpope/vim-pathogen
-"
-" Then, add to ~/.vim/bundle
-" https://github.com/altercation/vim-colors-solarized
-" https://github.com/tpope/vim-commentary <-- commenting plugin
-"
-" and optionally:
-" https://github.com/tpope/vim-sensible <-- sensible configuration for vim
-" https://github.com/vim-syntastic/syntastic <-- syntax checker (needs external tools like jshint)
-" https://github.com/ctrlpvim/ctrlp.vim <-- Fuzzy search with ctrl + p
-" https://github.com/scrooloose/nerdtree.git <-- Nerdtree file explorer
-" https://github.com/tpope/vim-endwise <-- Add end etc. to the end of the block
-" https://github.com/ervandew/supertab.git <-- light weight code completition
 "
 " Cheat sheets:
 " https://github.com/jordanhudgens/vim-settings/blob/master/vim-cheat-sheet.md
@@ -25,6 +9,7 @@ set t_Co=256
 set nocompatible " no compatibility with vi
 
 " Activate pathoghen
+" If activating, first install: https://github.com/tpope/vim-pathogen
 " execute pathogen#infect()
 
 " Use vundle instead of pathogen
