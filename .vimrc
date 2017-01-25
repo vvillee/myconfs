@@ -94,7 +94,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_ruby_checkers = ['rubocop']
 
 " shortcut for syntastic check
-map <C-s> :SyntasticCheck<CR>
+noremap <Leader>! :SyntasticCheck<cr>
 
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
