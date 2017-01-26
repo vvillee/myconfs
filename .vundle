@@ -27,8 +27,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree.git'
 " Add end etc. to the end of the block
 Plugin 'tpope/vim-endwise'
-" code completition
-Plugin 'Valloric/YouCompleteMe'
+" light weight code completition
+Plugin 'ervandew/supertab.git'
 " plugin for Git
 Plugin 'tpope/vim-fugitive'
 " snippets
