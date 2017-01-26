@@ -32,7 +32,9 @@ Plugin 'ervandew/supertab.git'
 " plugin for Git
 Plugin 'tpope/vim-fugitive'
 " snippets
-Plugin 'UtilSnips'
+Plugin 'SirVer/ultisnips'
+" ack search for vim (needs ack commandline tool)
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
