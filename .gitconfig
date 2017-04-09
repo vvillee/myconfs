@@ -14,6 +14,6 @@
   br = branch
   ci = commit
   st = status
-  less = log --oneline --graph --decorate
+  less = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset'
   summary = log --pretty='format:%Cgreen%h %Cred%ai %Cgreen%an %Creset- %s'
   more = log --decorate --graph
