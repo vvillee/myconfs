@@ -31,8 +31,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab.git'
 " plugin for Git
 Plugin 'tpope/vim-fugitive'
-" snippets
-Plugin 'SirVer/ultisnips'
 " ack search for vim (needs ack commandline tool)
 Plugin 'mileszs/ack.vim'
 
