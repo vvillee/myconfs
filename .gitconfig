@@ -2,6 +2,7 @@
   ui = auto
 [push]
   default = simple
+  followTags = true
 [core]
   excludesfile = ~/.gitignore
   editor = vim
