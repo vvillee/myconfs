@@ -16,5 +16,9 @@ findWithColors() {
 findWithFilename() {
     find . -type f -print0 | xargs -I '{}' -0 zgrep -H --color "$1" '{}';
 }
+findFromFilenames() {
+    find . -type f -name *$1*
+}
 alias colorfind=findWithColors
 alias namefind=findWithFilename
+alias filefind=findFromFilenames
