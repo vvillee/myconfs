@@ -1,3 +1,4 @@
+alias ls='ls -G'
 alias la='ls -la'
 alias ultra='ls -ultrac'
 alias gitl='git less'
