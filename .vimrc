@@ -68,6 +68,7 @@ imap <right> <nop>
 " mappings for adding a newline before/after without switching to insert mode
 nmap <C-K> O<Esc>j
 nmap <C-J> o<Esc>k
+nmap <CR> <C-K>
 
 " set leader
 let mapleader=";"
@@ -105,17 +106,21 @@ nnoremap <silent> <Leader>h :exe "vertical resize -10"<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let NERDTreeShowHidden=1
+
 " Ctrl + n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
 map <Leader>n <C-n>
+
 " map jj to esc
 imap jj <Esc>
+
 " map backspace in normal mode to delete normally
 nnoremap <BS> X
 
-" map arrow keys to switch windows
+" map arrow keys left and right to switch windows
 nmap <silent> <Left> :wincmd w<CR>
 nmap <silent> <Right> :wincmd w<CR>
 
-map <silent> <Up> <PageUp>
-map <silent> <Down> <PageDown>
+" map arrow keys up and down to go up and down by page
+map <silent> <Up> <C-u>
+map <silent> <Down> <C-d>
