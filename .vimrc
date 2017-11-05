@@ -124,3 +124,18 @@ nmap <silent> <Right> :wincmd w<CR>
 " map arrow keys up and down to go up and down by page
 map <silent> <Up> <C-u>
 map <silent> <Down> <C-d>
+
+" add QA to quit all buffers in vim without saving and QS with saving
+map QA :qa!<CR>
+map QS :wqa<CR>
+
+" add abbreviations for array and curly brackets
+ab arr []<Esc>i
+ab bra {}<Esc>i
+
+" always add closing char for these chars
+inoremap ( ()<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+inoremap < <><Left>
+
