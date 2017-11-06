@@ -133,10 +133,10 @@ map <silent> <Up> <C-u>
 map <silent> <Down> <C-d>
 
 " map shift+j half page down and shift+k half page up
-nmap J <nop>
-nmap K <nop>
-nmap J <C-d>
-nmap K <C-u>
+nnoremap J <nop>
+nnoremap K <nop>
+nnoremap J <C-d>
+nnoremap K <C-u>
 
 " add QA to quit all buffers in vim without saving and QS with saving
 map QA :qa!<CR>
