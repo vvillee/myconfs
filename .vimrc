@@ -3,7 +3,7 @@
 " Cheat sheets:
 " https://github.com/jordanhudgens/vim-settings/blob/master/vim-cheat-sheet.md
 " http://www.viemu.com/vi-vim-cheat-sheet.gif
-
+"
 set t_Co=256
 
 set nocompatible " no compatibility with vi
@@ -21,7 +21,7 @@ source ~/myconfs/.vundle
 syntax on " enable syntax highlighting
 
 set background=dark
-
+"
 " Set solarized confs
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -111,6 +111,9 @@ let NERDTreeShowHidden=1
 map <C-n> :NERDTreeToggle<CR>
 map <Leader>n <C-n>
 
+" map leader p to fuzzy search
+map <Leader>p <C-p>
+
 " map jj to esc
 imap jj <Esc>
 
@@ -129,13 +132,25 @@ map <silent> <Down> <C-d>
 map QA :qa!<CR>
 map QS :wqa<CR>
 
+" map Q to close window
+nmap Q <nop>
+nmap <silent> Q :q<CR>
+
 " add abbreviations for array and curly brackets
 ab arr []<Esc>i
-ab bra {}<Esc>i
+ab bra {}<Esc>bli<CR><Esc>O
 
 " always add closing char for these chars
 inoremap ( ()<Left>
+inoremap () ()
 inoremap " ""<Left>
+inoremap "" ""
 inoremap ' ''<Left>
+inoremap '' ''
 inoremap < <><Left>
+inoremap <> <>
+inoremap [ []<Left>
+inoremap [] []
+inoremap { {}<Left>
+inoremap {} {}
 
