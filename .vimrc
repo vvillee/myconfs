@@ -117,6 +117,9 @@ map <Leader>n <C-n>
 map <Leader>p <C-p>
 let g:ctrlp_show_hidden = 1
 
+" Press Space to turn off highlighting and clear any message already displayed.
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+
 " map jj to esc
 imap jj <Esc>
 
