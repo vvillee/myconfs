@@ -141,9 +141,8 @@ nnoremap K <nop>
 nnoremap J <C-d>
 nnoremap K <C-u>
 
-" add QA to quit all buffers in vim without saving and QS with saving
+" add QA to quit all buffers in vim without saving
 map QA :qa!<CR>
-map QS :wqa<CR>
 
 " map Q to close window
 nmap Q <nop>
