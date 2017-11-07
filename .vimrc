@@ -115,6 +115,7 @@ map <Leader>n <C-n>
 
 " map leader p to fuzzy search
 map <Leader>p <C-p>
+let g:ctrlp_show_hidden = 1
 
 " map jj to esc
 imap jj <Esc>
