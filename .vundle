@@ -30,6 +30,8 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab.git'
 " plugin for Git
 Plugin 'tpope/vim-fugitive'
+" plugin for Git to show changes in editor
+Plugin 'airblade/vim-gitgutter'
 " ack search for vim (needs ack commandline tool)
 Plugin 'mileszs/ack.vim'
 " status/tabline for vim that's light as air.
