@@ -1,5 +1,5 @@
-alias ls='ls -G'
-alias la='ls -la'
+alias ls='ls -G --color=auto'
+alias la='ls -la --color=auto'
 alias ultra='ls -ultrac'
 alias gitl='git less'
 alias gitm='git more'
