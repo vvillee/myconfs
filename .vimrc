@@ -131,7 +131,7 @@ nmap <silent> <Left> :wincmd w<CR>
 nmap <silent> <Right> :wincmd w<CR>
 
 " map leader s to split window vertically and leader S horizontally
-nmap <Leader>s <C-w>v
+nmap <Leader>v <C-w>v
 nmap <Leader>S <C-w>S
 
 " map arrow keys up and down to go up and down by page
