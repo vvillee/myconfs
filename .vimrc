@@ -153,22 +153,11 @@ nmap <silent> Q :q<CR>
 
 " add abbreviations for array and curly brackets
 ab arr []<Esc>i
+ab sq []<Esc>i
 ab bra {}<Esc>bli<CR><Esc>O
-ab bra1 {}<Esc>i
-
-" always add closing char for these chars
-inoremap ( ()<Left>
-inoremap () ()
-inoremap " ""<Left>
-inoremap "" ""
-inoremap ' ''<Left>
-inoremap '' ''
-inoremap < <><Left>
-inoremap <> <>
-inoremap [ []<Left>
-inoremap [] []
-inoremap { {}<Left>
-inoremap {} {}
+ab bras {}<Esc>i
+ab quot ''<Esc>i
+ab dquot ""<Esc>i
 
 " * and # search for visual mode also
 function! s:VSetSearch()
