@@ -85,8 +85,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_standard_exec = 'happiness'
+let g:syntastic_javascript_standard_generic = 1
 
 " shortcut for syntastic check
 noremap <Leader>! :SyntasticCheck<cr>
