@@ -55,6 +55,11 @@ filetype plugin indent on " enable file spesific behavior like syntax highlighti
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
+" Set backups off
+set nobackup
+set nowb
+set noswapfile
+
 " -- disable directional keys
 map <up> <nop>
 map <down> <nop>
