@@ -117,6 +117,9 @@ map <Leader>n <C-n>
 map <Leader>p <C-p>
 let g:ctrlp_show_hidden = 1
 
+" map leader P to fuzzy tag search
+map <Leader>P :CtrlPTag<CR>
+
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
@@ -130,7 +133,7 @@ nnoremap <BS> X
 nmap <silent> <Left> :wincmd w<CR>
 nmap <silent> <Right> :wincmd w<CR>
 
-" map leader s to split window vertically and leader S horizontally
+" map leader v to split window vertically and leader S horizontally
 nmap <Leader>v <C-w>v
 nmap <Leader>S <C-w>S
 
@@ -169,3 +172,11 @@ endfunction
 
 vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
 vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
+
+" map tag to ctrl or leader + g
+nmap <C-g> <C-]>
+nmap <Leader>g <C-]>
+
+" rebuild tags with RT
+map RT :!sh -xc 'ctags -R -f tags'<CR>
+
