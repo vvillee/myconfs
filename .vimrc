@@ -109,6 +109,9 @@ nnoremap <silent> <Leader>h :exe "vertical resize -10"<CR>
 " Window resize to equal sizes
 noremap <silent> <Leader>r <C-w>=
 
+" Redraw window
+noremap <silent> <Leader>R :redraw!<CR>
+
 " -- Nerdtree (https://github.com/scrooloose/nerdtree.git)
 " open nerdtree automatically upon a startup if no files were specified
 " autocmd StdinReadPre * let s:std_in=1
