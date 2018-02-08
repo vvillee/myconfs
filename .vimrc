@@ -139,8 +139,8 @@ imap jj <Esc>
 nnoremap <BS> X
 
 " map arrow keys left and right to switch windows
-nmap <silent> <Left> :wincmd w<CR>
-nmap <silent> <Right> :wincmd w<CR>
+nmap <silent> <Left> :wincmd h<CR>
+nmap <silent> <Right> :wincmd l<CR>
 
 " map leader v to split window vertically and leader S horizontally
 nmap <Leader>v <C-w>v
