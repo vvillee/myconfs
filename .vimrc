@@ -138,6 +138,9 @@ imap jj <Esc>
 " map backspace in normal mode to delete normally
 nnoremap <BS> X
 
+" toggle paste mode
+map <leader>sp :setlocal paste!<cr>
+
 " map arrow keys left and right to switch windows
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
