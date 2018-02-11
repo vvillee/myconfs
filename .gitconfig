@@ -1,3 +1,6 @@
+# Include this file in ~/.gitconfig
+# [include]
+#   path = ~/myconfs/.gitconfig
 [color]
   ui = auto
 [push]
