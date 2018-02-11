@@ -1,15 +1,15 @@
 alias ls='ls -G --color=auto'
 alias la='ls -la --color=auto'
-alias ultra='ls -ultrac'
+alias lu='ls -ultrac'
 alias gitl='git less'
 alias gitm='git more'
 alias gits='git summary'
-alias tags='git tag -l | sort -V'
+alias gtags='git tag -l | sort -V'
 
 gitsearch() {
     git log --grep="$1"
 }
-alias gitsearch=gitsearch
+alias gsearch=gitsearch
 
 findWithColors() {
     find . -type f -print0 | xargs -I '{}' -0 zgrep --color "$1" '{}';
@@ -20,6 +20,6 @@ findWithFilename() {
 findFromFilenames() {
     find . -type f -iname *$1*
 }
-alias colorfind=findWithColors
-alias namefind=findWithFilename
-alias filefind=findFromFilenames
+alias findc=findWithColors
+alias findcf=findWithFilename
+alias findf=findFromFilenames
