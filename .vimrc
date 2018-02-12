@@ -144,6 +144,8 @@ map <leader>sp :setlocal paste!<cr>
 " map arrow keys left and right to switch windows
 nmap <silent> <Left> :wincmd h<CR>
 nmap <silent> <Right> :wincmd l<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 " map leader v to split window vertically and leader S horizontally
 nmap <Leader>v <C-w>v
