@@ -26,7 +26,7 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-set scrolloff=3 " display atleast 3 lines around your cursor
+set scrolloff=5 " display atleast x lines around your cursor
 
 set title
 set number
@@ -86,6 +86,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
@@ -149,7 +150,7 @@ nmap <silent> <C-l> :wincmd l<CR>
 
 " map leader v to split window vertically and leader S horizontally
 nmap <Leader>v <C-w>v
-nmap <Leader>S <C-w>S
+nmap <Leader>h <C-w>S
 
 " map arrow keys up and down to go up and down by page
 map <silent> <Up> <C-u>
