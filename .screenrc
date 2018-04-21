@@ -82,13 +82,27 @@ bindkey "^[[1;3A" focus up
 bindkey "^[[1;3C" focus right
 bindkey "^[[1;3B" focus down
 
+# same for mac os x
+bindkey "^[[1;9D" focus left
+bindkey "^[[1;9A" focus up
+bindkey "^[[1;9C" focus right
+bindkey "^[[1;9B" focus down
+
 # switch windows with F3 (prev) and F4 (next)
 bindkey "^[OR" prev
 bindkey "^[OS" next
 
+# same for mac os x
+bindkey "<F3>" prev
+bindkey "<F4>" next
+
 # switch layouts with Alt+l (next layout) and Alt+L (prev)
 bindkey "^[l" layout next
 bindkey "^[L" layout prev
+
+# same for mac os x
+bindkey "ﬁ" layout prev
+bindkey "ﬂ" layout next
 
 # F2 puts Screen into resize mode. Resize regions using hjkl keys.
 bindkey "^[OQ" eval "command -c rsz" # enter resize mode
