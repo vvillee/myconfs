@@ -39,6 +39,9 @@ split
 resize -v +20
 focus down
 focus up
+layout new two-vertical
+select 1
+split -v
 layout new three
 select 1
 split
@@ -46,6 +49,19 @@ resize -v +30
 focus down
 split -v
 focus right
+focus up
+layout new three-vertical
+select 1
+split -v
+split -v
+layout new six
+select 1
+split
+split -v
+split -v
+focus down
+split -v
+split -v
 focus up
 layout new nine
 select 1
