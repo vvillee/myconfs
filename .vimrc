@@ -195,3 +195,6 @@ nmap <Leader>g <C-]>
 " rebuild tags with RT
 map RT :!sh -xc 'ctags -R -f tags'<CR>
 
+" js auto format
+autocmd bufwritepost *.js silent !standard --fix %
+set autoread
