@@ -198,3 +198,7 @@ map RT :!sh -xc 'ctags -R -f tags'<CR>
 " js auto format
 autocmd bufwritepost *.js silent !standard --fix %
 set autoread
+
+" background color shortcuts
+noremap <silent> <Leader>bl :set background=light<CR>
+noremap <silent> <Leader>bd :set background=dark<CR>
