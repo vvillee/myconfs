@@ -92,8 +92,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_javascript_checkers = ['standard']
-let g:syntastic_javascript_standard_generic = 1
+let g:syntastic_javascript_checkers = ['eslint']
 
 " shortcut for syntastic check
 noremap <Leader>! :SyntasticCheck<cr>
@@ -194,10 +193,6 @@ nmap <Leader>g <C-]>
 
 " rebuild tags with RT
 map RT :!sh -xc 'ctags -R -f tags'<CR>
-
-" js auto format
-autocmd bufwritepost *.js silent !standard --fix %
-set autoread
 
 " background color shortcuts
 function! g:ToggleBackground()
