@@ -200,5 +200,12 @@ autocmd bufwritepost *.js silent !standard --fix %
 set autoread
 
 " background color shortcuts
-noremap <silent> <Leader>bl :set background=light<CR>
-noremap <silent> <Leader>bd :set background=dark<CR>
+function! g:ToggleBackground()
+  if &background != 'dark'
+    set background=dark
+  else
+    set background=light
+    colorscheme solarized
+  endif
+endfunction
+nnoremap <silent> <Leader>b :call g:ToggleBackground()<CR>
