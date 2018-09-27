@@ -112,16 +112,6 @@ noremap <silent> <Leader>r <C-w>=
 " Redraw window
 noremap <silent> <Leader>R :redraw!<CR>
 
-" -- Nerdtree (https://github.com/scrooloose/nerdtree.git)
-" open nerdtree automatically upon a startup if no files were specified
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-let NERDTreeShowHidden=1
-
-" Ctrl + n to open nerdtree
-map <C-n> :NERDTreeToggle<CR>
-map <Leader>n <C-n>
-
 " map leader p to fuzzy search
 map <Leader>p <C-p>
 let g:ctrlp_show_hidden = 1

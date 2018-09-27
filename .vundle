@@ -22,8 +22,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'vim-syntastic/syntastic'
 " Fuzzy search with ctrl + p
 Plugin 'ctrlpvim/ctrlp.vim'
-" Nerdtree file explorer
-Plugin 'scrooloose/nerdtree.git'
 " Add end etc. to the end of the block
 Plugin 'tpope/vim-endwise'
 " light weight code completition
