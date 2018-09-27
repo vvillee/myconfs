@@ -70,10 +70,6 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-" mappings for adding a newline before/after without switching to insert mode
-nmap <C-k> O<Esc>j
-nmap <C-j> o<Esc>k
-
 " set leader
 let mapleader=";"
 
@@ -106,18 +102,10 @@ nnoremap <silent> <Leader>k :exe "resize +10"<CR>
 nnoremap <silent> <Leader>l :exe "vertical resize +10"<CR>
 nnoremap <silent> <Leader>h :exe "vertical resize -10"<CR>
 
-" Window resize to equal sizes
-noremap <silent> <Leader>r <C-w>=
-
 " Redraw window
 noremap <silent> <Leader>R :redraw!<CR>
 
-" map leader p to fuzzy search
-map <Leader>p <C-p>
 let g:ctrlp_show_hidden = 1
-
-" map leader P to fuzzy tag search
-map <Leader>P :CtrlPTag<CR>
 
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -125,46 +113,8 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " map jj to esc
 imap jj <Esc>
 
-" map backspace in normal mode to delete normally
-nnoremap <BS> X
-
 " toggle paste mode
 map <leader>sp :setlocal paste!<cr>
-
-" map arrow keys left and right to switch windows
-nmap <silent> <Left> :wincmd h<CR>
-nmap <silent> <Right> :wincmd l<CR>
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-l> :wincmd l<CR>
-
-" map leader v to split window vertically and leader S horizontally
-nmap <Leader>v <C-w>v
-nmap <Leader>h <C-w>S
-
-" map arrow keys up and down to go up and down by page
-map <silent> <Up> <C-u>
-map <silent> <Down> <C-d>
-
-" map shift+j half page down and shift+k half page up
-nnoremap J <nop>
-nnoremap K <nop>
-nnoremap J <C-d>
-nnoremap K <C-u>
-
-" add QA to quit all buffers in vim without saving
-map QA :qa!<CR>
-
-" map Q to close window
-nmap Q <nop>
-nmap <silent> Q :q<CR>
-
-" add abbreviations for array and curly brackets
-ab arr []<Esc>i
-ab sq []<Esc>i
-ab bra {}<Esc>bli<CR><Esc>O
-ab bras {}<Esc>i
-ab quot ''<Esc>i
-ab dquot ""<Esc>i
 
 " * and # search for visual mode also
 function! s:VSetSearch()
@@ -179,7 +129,6 @@ vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
 
 " map tag to ctrl or leader + g
 nmap <C-g> <C-]>
-nmap <Leader>g <C-]>
 
 " rebuild tags with RT
 map RT :!sh -xc 'ctags -R -f tags'<CR>
