@@ -93,6 +93,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 " shortcut for syntastic check
 noremap <Leader>! :SyntasticCheck<cr>
 
+let g:netrw_xstrlen = 0
+
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
