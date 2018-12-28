@@ -23,7 +23,7 @@ syntax on " enable syntax highlighting
 set background=dark
 "
 " Set solarized confs
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized
 
 set scrolloff=5 " display atleast x lines around your cursor
@@ -82,7 +82,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
+let g:syntastic_loc_list_height = 3
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
@@ -98,6 +98,9 @@ let g:netrw_xstrlen = 0
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
+" indentLine configuration
+let g:indentLine_char = '▏'
+
 " Window pane resizing
 nnoremap <silent> <Leader>j :exe "resize -10"<CR>
 nnoremap <silent> <Leader>k :exe "resize +10"<CR>
@@ -107,7 +110,7 @@ nnoremap <silent> <Leader>h :exe "vertical resize -10"<CR>
 " Redraw window
 noremap <silent> <Leader>R :redraw!<CR>
 
-let g:ctrlp_show_hidden = 1
+let g:ctrlp_show_hidden = 0
 
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
@@ -129,19 +132,10 @@ endfunction
 vnoremap * :<C-u>call <SID>VSetSearch()<CR>//<CR>
 vnoremap # :<C-u>call <SID>VSetSearch()<CR>??<CR>
 
-" map tag to ctrl or leader + g
+" map go to tag to ctrl + g
 nmap <C-g> <C-]>
 
 " rebuild tags with RT
 map RT :!sh -xc 'ctags -R -f tags'<CR>
 
-" background color shortcuts
-function! g:ToggleBackground()
-  if &background != 'dark'
-    set background=dark
-  else
-    set background=light
-    colorscheme solarized
-  endif
-endfunction
-nnoremap <silent> <Leader>b :call g:ToggleBackground()<CR>
+call togglebg#map("<F5>")
