@@ -139,3 +139,8 @@ nmap <C-g> <C-]>
 map RT :!sh -xc 'ctags -R -f tags'<CR>
 
 call togglebg#map("<F5>")
+
+" UltiSnips trigger configuration
+let g:UltiSnipsExpandTrigger="<C-l>"
+" UltiSnips add html to js-files
+autocmd FileType javascript UltiSnipsAddFiletypes html

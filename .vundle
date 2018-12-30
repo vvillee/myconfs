@@ -39,6 +39,28 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-vinegar'
 " display indented blocks visually
 Plugin 'Yggdroot/indentLine'
+" snippets for various languages
+Plugin 'honza/vim-snippets'
+
+" Javascript stuff begin
+" javascript bundle for vim
+Plugin 'pangloss/vim-javascript'
+" better json for vim
+Plugin 'elzr/vim-json'
+" syntax highlighting and indenting for JSX
+Plugin 'mxw/vim-jsx'
+" expanding abbreviations for html
+Plugin 'mattn/emmet-vim'
+" Insert or delete brackets, parents, quotes in pair
+Plugin 'jiangmiao/auto-pairs'
+" ES2015 code snippets
+Plugin 'epilande/vim-es2015-snippets'
+" React code snippets (Optional)
+Plugin 'epilande/vim-react-snippets'
+" Ultisnips
+Plugin 'SirVer/ultisnips'
+" Support for styled-components
+Plugin 'styled-components/vim-styled-components'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
