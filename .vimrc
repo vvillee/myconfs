@@ -98,8 +98,12 @@ let g:netrw_xstrlen = 0
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
-" indentLine configuration
-let g:indentLine_char = '▏'
+" indent guides configuration
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 " Window pane resizing
 nnoremap <silent> <Leader>j :exe "resize -10"<CR>

@@ -38,7 +38,7 @@ Plugin 'vim-airline/vim-airline-themes'
 " vinegar.vim some enhancements to netrw
 Plugin 'tpope/vim-vinegar'
 " display indented blocks visually
-Plugin 'Yggdroot/indentLine'
+Plugin 'nathanaelkane/vim-indent-guides'
 " snippets for various languages
 Plugin 'honza/vim-snippets'
 
