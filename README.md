@@ -1,0 +1,3 @@
+# myconfs
+
+DEPRECATED
